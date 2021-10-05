@@ -13,8 +13,8 @@ docker run -d \
 
 ## Usage docker-compose
 ```
-  alpine-ftp
-    image:kllmkll/alpine-ftp-server
+  alpine-ftp:
+    image: kllmkll/alpine-ftp-server
     environment:
       USERS:"one|1234 two|1234"
       ADDRESS=ftp.site.domain
