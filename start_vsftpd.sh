@@ -34,6 +34,7 @@ for i in $USERS ; do
 
   echo -e "$PASS\n$PASS" | adduser -h $FOLDER -s /sbin/nologin $UID_OPT $NAME
   mkdir -p $FOLDER
+#  echo $NAME >> /etc/vsftpd.userlist
   chown $NAME:$NAME $FOLDER
   unset NAME PASS FOLDER UID
 done
